@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>lesson 20</title>
+		<link rel="stylesheet" href="src/css/style.css" />
+	</head>
+	<body>
+		<section class="slider">
+			<div class="slider-wrapper">
+				<div class="slide">
+					<img class="img" src="src/images/1.jpg" alt="" />
+					<div class="desc">
+						<h3 class="title">slide 1</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+							aperiam exercitationem ullam consectetur commodi natus eaque
+							nesciunt non animi eligendi, ut, accusantium vero officia fugit
+							dolorem eius officiis praesentium aliquam?
+						</p>
+					</div>
+				</div>
+				<div class="slide">
+					<img class="img" src="src/images/2.jpg" alt="" />
+					<div class="desc">
+						<h3 class="title">slide 2</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+							aperiam exercitationem ullam consectetur commodi natus eaque
+							nesciunt non animi eligendi, ut, accusantium vero officia fugit
+							dolorem eius officiis praesentium aliquam?
+						</p>
+					</div>
+				</div>
+				<div class="slide">
+					<img class="img" src="src/images/3.jpg" alt="" />
+					<div class="desc">
+						<h3 class="title">slide 3</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+							aperiam exercitationem ullam consectetur commodi natus eaque
+							nesciunt non animi eligendi, ut, accusantium vero officia fugit
+							dolorem eius officiis praesentium aliquam?
+						</p>
+					</div>
+				</div>
+				<div class="slide">
+					<img class="img" src="src/images/4.jpg" alt="" />
+					<div class="desc">
+						<h3 class="title">slide 4</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+							aperiam exercitationem ullam consectetur commodi natus eaque
+							nesciunt non animi eligendi, ut, accusantium vero officia fugit
+							dolorem eius officiis praesentium aliquam?
+						</p>
+					</div>
+				</div>
+				<div class="slide">
+					<img class="img" src="src/images/5.jpg" alt="" />
+					<div class="desc">
+						<h3 class="title">slide 5</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+							aperiam exercitationem ullam consectetur commodi natus eaque
+							nesciunt non animi eligendi, ut, accusantium vero officia fugit
+							dolorem eius officiis praesentium aliquam?
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="slider-actions">
+				<button class="btn"></button>
+				<button class="btn"></button>
+				<button class="btn"></button>
+				<button class="btn"></button>
+				<button class="btn"></button>
+			</div>
+		</section>
+		<section>
+			<p class="clock"></p>
+			<p class="countdown"></p>
+		</section>
+		<section class="form">
+			<form action="/user" method="get" novalidate>
+				<div class="form-row">
+					<label for="name"> enter your name </label>
+
+					<input
+						type="name"
+						id="name"
+						name="name"
+						placeholder="enter your name"
+					/>
+					<span class="message" id="name-message"></span>
+				</div>
+				<div class="form-row">
+					<label for="email"> enter your email </label>
+
+					<input
+						type="email"
+						id="email"
+						name="email"
+						placeholder="enter your email"
+						required
+					/>
+					<span class="message" id="email-message"></span>
+				</div>
+				<div class="form-row">
+					<label for="password"> enter password </label>
+					<input
+						type="password"
+						id="password"
+						name="password"
+						placeholder="enter password"
+						minlength="8"
+						required
+					/>
+
+					<span class="message" id="password-message"></span>
+				</div>
+				<button type="submit" class="button submit-form">submit form</button>
+			</form>
+		</section>
+		<button class="open-modal">open modal</button>
+
+		<div class="modal" id="success-modal">
+			<div class="modal-content">
+				<button class="close-btn">X</button>
+
+				<p class="modal-message">success message</p>
+			</div>
+		</div>
+		<div class="modal" id="error-modal">
+			<div class="modal-content">
+				<button class="close-btn">X</button>
+
+				<p class="modal-message">error message</p>
+			</div>
+		</div>
+		<script src="src/js/app.js"></script>
+	</body>
+</html>
